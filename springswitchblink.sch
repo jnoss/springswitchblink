@@ -2771,12 +2771,12 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <part name="CB1" library="SparkFun-Capacitors" deviceset="CAP" device="0603-CAP" value=".1uF"/>
 <part name="P+5" library="Pinoccio" deviceset="VCC" device=""/>
 <part name="GND6" library="Pinoccio" deviceset="GND" device=""/>
-<part name="PB3" library="my library" deviceset="VIAPAD" device="BIGGER-NOPASTE"/>
-<part name="PB1" library="my library" deviceset="VIAPAD" device="BIGGER-NOPASTE"/>
-<part name="PB0" library="my library" deviceset="VIAPAD" device="BIGGER-NOPASTE"/>
+<part name="PB3" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
+<part name="PB1" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
+<part name="PB0" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
 <part name="RS2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="100"/>
-<part name="GND" library="my library" deviceset="VIAPAD" device="BIGGER-NOPASTE"/>
-<part name="VCC" library="my library" deviceset="VIAPAD" device="BIGGER-NOPASTE"/>
+<part name="GND" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
+<part name="VCC" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
 <part name="P+6" library="Pinoccio" deviceset="VCC" device=""/>
 <part name="GND7" library="Pinoccio" deviceset="GND" device=""/>
 <part name="BATT1" library="battery_holders" deviceset="AAA" device="KEYSTONE-2466"/>

@@ -17,12 +17,12 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -795,11 +795,12 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="S1" pad="P$1"/>
 <wire x1="22.3139" y1="13.0683" x2="23.114" y2="12.2682" width="0.2032" layer="1"/>
 <wire x1="22.3139" y1="14.4018" x2="22.3139" y2="13.0683" width="0.2032" layer="1"/>
-<wire x1="18.1356" y1="18.5801" x2="22.3139" y2="14.4018" width="0.2032" layer="1"/>
-<wire x1="8.6233" y1="18.5801" x2="18.1356" y2="18.5801" width="0.2032" layer="1"/>
-<wire x1="6.9342" y1="16.891" x2="8.6233" y2="18.5801" width="0.2032" layer="1"/>
 <wire x1="23.114" y1="12.2682" x2="23.202" y2="12.192" width="0.2032" layer="1"/>
-<wire x1="6.9342" y1="16.891" x2="6.896" y2="16.839" width="0.2032" layer="1"/>
+<wire x1="22.3139" y1="14.4018" x2="22.3012" y2="14.4018" width="0.2032" layer="1"/>
+<wire x1="22.3012" y1="14.4018" x2="21.971" y2="14.732" width="0.2032" layer="1"/>
+<wire x1="6.896" y1="16.839" x2="17.197" y2="16.839" width="0.2032" layer="1"/>
+<wire x1="17.197" y1="16.839" x2="19.304" y2="14.732" width="0.2032" layer="1"/>
+<wire x1="19.304" y1="14.732" x2="21.971" y2="14.732" width="0.2032" layer="1"/>
 </signal>
 <signal name="LED_R">
 <contactref element="U1" pad="3"/>

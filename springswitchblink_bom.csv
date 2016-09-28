@@ -1,0 +1,11 @@
+"Qty";"Value";"Device";"Package";"Parts";"Description";"";
+"1";".1uF";"CAP0603-CAP";"0603-CAP";"CB1";"Capacitor";"";
+"2";"10k";"RESISTOR0603-RES";"0603-RES";"R1, R3";"Resistor";"";
+"1";"1k";"RESISTOR0603-RES";"0603-RES";"R2";"Resistor";"";
+"3";"200";"RESISTOR0603-RES";"0603-RES";"RB, RG, RR";"Resistor";"";
+"1";"20MM_HOLDERBU2032-1";"20MM_HOLDERBU2032-1";"BU2032-1";"BATT1";"";"";
+"1";"ATTINY85";"ATTINY45";"SO08-EIAJ";"U1";"Atmel 8-pin 2/4/8kB flash uC";"";
+"1";"LED-RGBPLCC4";"LED-RGBPLCC4";"PLCC4";"D1";"LED-Bicolor  Red/Green";"";
+"1";"MYISP-AVR-ISP-6VERT";"MYISP-AVR-ISP-6VERT";"NOSS_AVR-ISP-6";"ISP";"AVR ISP-6 Serial Programming Header";"";
+"1";"SOLDERJUMPERNO";"SOLDERJUMPERNO";"SJ_2S-NO";"RST";"Solder Jumper";"";
+"1";"SPRING_SWITCH";"SPRING_SWITCH";"SW-18020P-RA";"S1";"";"";

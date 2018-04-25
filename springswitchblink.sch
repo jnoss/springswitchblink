@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -2632,16 +2633,22 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <library name="spring_switch">
 <packages>
 <package name="SW-18020P-RA">
-<pad name="P$1" x="0" y="0" drill="0.7"/>
-<pad name="P$2" x="0" y="-1.9" drill="0.4"/>
-<wire x1="1.9" y1="2.2" x2="13.4" y2="2.2" width="0.127" layer="21"/>
-<wire x1="13.4" y1="2.2" x2="13.4" y2="-2.3" width="0.127" layer="21"/>
-<wire x1="13.4" y1="-2.3" x2="1.9" y2="-2.3" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.651"/>
+<pad name="P$2" x="0" y="-1.9" drill="0.635" diameter="1.27"/>
+<wire x1="13.4" y1="2.2" x2="13.4" y2="-2.3" width="0.127" layer="51"/>
 <wire x1="1.9" y1="-2.3" x2="1.9" y2="2.2" width="0.127" layer="21"/>
-<text x="2.5" y="0" size="1.27" layer="21" align="center-left">SW-18020P</text>
-<text x="2" y="-4" size="1.27" layer="21">&gt;NAME</text>
+<text x="2.5" y="0" size="0.8128" layer="51" align="center-left">SW-18020P</text>
+<text x="2" y="-4" size="1.27" layer="25">&gt;NAME</text>
 <wire x1="0.762" y1="0" x2="1.905" y2="0" width="0.127" layer="21"/>
 <wire x1="0.762" y1="-1.905" x2="1.905" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="1.9" y1="2.2" x2="13.4" y2="2.2" width="0.127" layer="51"/>
+<wire x1="1.9" y1="2.2" x2="2.286" y2="2.2" width="0.127" layer="21"/>
+<wire x1="2.286" y1="-2.3" x2="1.9" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="13.4" y1="-2.3" x2="1.9" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="13.5" y1="-2.3" x2="17" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="17" y1="-2.3" x2="17" y2="2.2" width="0.127" layer="51"/>
+<wire x1="13.4" y1="2.2" x2="17" y2="2.2" width="0.127" layer="51"/>
+<text x="15.165" y="-0.965" size="0.8128" layer="51" rot="R90">010</text>
 </package>
 </packages>
 <symbols>
@@ -2700,14 +2707,37 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pad name="+" x="22.5" y="0" drill="1" diameter="2.54"/>
 <text x="-5.08" y="-1.27" size="2.54" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="MPD-BC2AAAPC">
+<wire x1="-25.7" y1="12.2" x2="25.7" y2="12.2" width="0.127" layer="21"/>
+<wire x1="25.7" y1="12.2" x2="25.7" y2="-12.2" width="0.127" layer="21"/>
+<wire x1="25.7" y1="-12.2" x2="-25.7" y2="-12.2" width="0.127" layer="21"/>
+<wire x1="-25.7" y1="-12.2" x2="-25.7" y2="12.2" width="0.127" layer="21"/>
+<circle x="7.41" y="0" radius="1.2" width="0.127" layer="21"/>
+<wire x1="-8" y1="-0.3" x2="-8" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-8" y1="0.3" x2="-7.3" y2="1" width="0.127" layer="21" curve="-90"/>
+<wire x1="-7.3" y1="1" x2="-4.7" y2="1" width="0.127" layer="21"/>
+<wire x1="-4.7" y1="1" x2="-4" y2="0.3" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4" y1="0.3" x2="-4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-0.3" x2="-4.7" y2="-1" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4.7" y1="-1" x2="-7.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="-7.3" y1="-1" x2="-8" y2="-0.3" width="0.127" layer="21" curve="-90"/>
+<pad name="-" x="23.9" y="5.7" drill="1.17" diameter="2.032" shape="square"/>
+<pad name="+" x="23.9" y="-5.7" drill="1.17" diameter="2.032"/>
+<text x="20.65" y="5.7" size="1.27" layer="21" align="center-left">-</text>
+<text x="20.65" y="-5.7" size="1.27" layer="21" align="center-left">+</text>
+<text x="24.13" y="2.54" size="0.8128" layer="21" rot="R180">&gt;NAME</text>
+<text x="24.13" y="0" size="0.8128" layer="21" rot="R180">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AAA">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <text x="-7.62" y="5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="-" x="-7.62" y="0" visible="off" length="middle"/>
-<pin name="+" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="+" x="-7.62" y="0" visible="off" length="middle"/>
+<pin name="-" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2722,8 +2752,8 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <devices>
 <device name="" package="12BH412">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="+" pad="-"/>
+<connect gate="G$1" pin="-" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2731,8 +2761,17 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 </device>
 <device name="KEYSTONE-2466" package="KEYSTONE-2466">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="+" pad="-"/>
+<connect gate="G$1" pin="-" pad="+"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MPD-BC2AAAPC" package="MPD-BC2AAAPC">
+<connects>
+<connect gate="G$1" pin="+" pad="-"/>
+<connect gate="G$1" pin="-" pad="+"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2757,7 +2796,7 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <part name="P+1" library="Pinoccio" deviceset="VCC" device=""/>
 <part name="GND1" library="Pinoccio" deviceset="GND" device=""/>
 <part name="GND2" library="Pinoccio" deviceset="GND" device=""/>
-<part name="U1" library="my library" deviceset="ATTINY45" device="DIP8" value="ATTINY85"/>
+<part name="U1" library="my library" deviceset="ATTINY45" device="" value="ATTINY85"/>
 <part name="P+2" library="Pinoccio" deviceset="VCC" device=""/>
 <part name="GND3" library="Pinoccio" deviceset="GND" device=""/>
 <part name="P+3" library="Pinoccio" deviceset="VCC" device=""/>
@@ -2779,7 +2818,7 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <part name="VCC" library="my library" deviceset="VIAPAD" device="VIAPAD"/>
 <part name="P+6" library="Pinoccio" deviceset="VCC" device=""/>
 <part name="GND7" library="Pinoccio" deviceset="GND" device=""/>
-<part name="BATT1" library="battery_holders" deviceset="AAA" device="KEYSTONE-2466"/>
+<part name="BATT1" library="battery_holders" deviceset="AAA" device="MPD-BC2AAAPC" value="AAAMPD-BC2AAAPC"/>
 <part name="S1" library="spring_switch" deviceset="SPRING_SWITCH" device=""/>
 </parts>
 <sheets>
@@ -2832,7 +2871,7 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="17.78" y1="20.32" x2="17.78" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="BATT1" gate="G$1" pin="+"/>
 </segment>
@@ -2875,7 +2914,7 @@ Mouser part #12BH412 - but pretty much any 1x AAA battery holder should be the s
 <net name="VCC" class="0">
 <segment>
 <pinref part="P+1" gate="1" pin="VCC"/>
-<wire x1="17.78" y1="45.72" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="45.72" x2="17.78" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="BATT1" gate="G$1" pin="-"/>
 </segment>
 <segment>

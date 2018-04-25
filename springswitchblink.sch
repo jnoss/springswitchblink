@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1620,7 +1621,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="RG" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="200"/>
 <part name="RR" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="200"/>
 <part name="D1" library="my library" deviceset="LED-RGB" device="PLCC4"/>
-<part name="ISP" library="my library" deviceset="MYISP-AVR-ISP-6" device="VERT"/>
+<part name="ISP" library="my library" deviceset="MYISP-AVR-ISP-6" device="VERT" value="ISP"/>
 </parts>
 <sheets>
 <sheet>
@@ -1898,6 +1899,16 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="D1" gate="G$1" pin="B-C"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>

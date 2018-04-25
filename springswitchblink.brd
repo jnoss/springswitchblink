@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="10" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -17,18 +18,18 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -437,10 +438,11 @@ Please make sure your boards conform to these design rules.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -543,7 +545,7 @@ Please make sure your boards conform to these design rules.</description>
 <elements>
 <element name="CB1" library="SparkFun-Capacitors" package="0603-CAP" value=".1uF" x="12.954" y="10.16" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.2715" y="12.319" size="0.8128" layer="51" rot="R90"/>
-<attribute name="VALUE" x="11.811" y="11.2395" size="0.4064" layer="27" rot="R270"/>
+<attribute name="VALUE" x="12.827" y="2.6035" size="0.8128" layer="27" rot="R270"/>
 </element>
 <element name="RST" library="Pinoccio" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="4.974" y="11.045" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.238" y="9.504" size="0.8128" layer="25" rot="R180"/>
@@ -551,19 +553,19 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R3" library="SparkFun-Resistors" package="0603-RES" value="10k" x="22.352" y="10.668" smashed="yes">
 <attribute name="NAME" x="20.701" y="10.9855" size="0.8128" layer="21" rot="R180"/>
-<attribute name="VALUE" x="21.2725" y="9.525" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="31.4325" y="10.541" size="0.8128" layer="27"/>
 </element>
 <element name="R1" library="SparkFun-Resistors" package="0603-RES" value="10k" x="22.352" y="13.716" smashed="yes">
 <attribute name="NAME" x="20.701" y="14.0335" size="0.8128" layer="21" rot="R180"/>
-<attribute name="VALUE" x="21.2725" y="12.573" size="0.4064" layer="27"/>
+<attribute name="VALUE" x="31.4325" y="13.589" size="0.8128" layer="27"/>
 </element>
 <element name="R2" library="SparkFun-Resistors" package="0603-RES" value="1k" x="22.352" y="12.192" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.701" y="12.5095" size="0.8128" layer="21" rot="R180"/>
-<attribute name="VALUE" x="23.4315" y="13.335" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.4325" y="12.065" size="0.8128" layer="27"/>
 </element>
 <element name="U1" library="my library" package="SO08-EIAJ" value="ATTINY85" x="16.51" y="9.652" smashed="yes">
-<attribute name="VALUE" x="23.876" y="17.78" size="0.8128" layer="21" ratio="10" rot="R180"/>
 <attribute name="NAME" x="18.338" y="11.249" size="0.8128" layer="51" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="23.876" y="17.78" size="0.8128" layer="21" ratio="10" rot="R180"/>
 </element>
 <element name="BATT1" library="battery_holders" package="BU2032-1" value="20MM_HOLDERBU2032-1" x="28.956" y="12.192" smashed="yes" rot="MR0"/>
 <element name="S1" library="spring_switch" package="SW-18020P-RA" value="SPRING_SWITCH" x="6.896" y="16.839" smashed="yes">
@@ -571,23 +573,23 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="RB" library="SparkFun-Resistors" package="0603-RES" value="200" x="22.352" y="6.096" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.701" y="6.4135" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="23.4315" y="7.239" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.4325" y="5.969" size="0.8128" layer="27"/>
 </element>
 <element name="RG" library="SparkFun-Resistors" package="0603-RES" value="200" x="22.352" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.701" y="7.9375" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="23.4315" y="8.763" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.4325" y="7.493" size="0.8128" layer="27"/>
 </element>
 <element name="RR" library="SparkFun-Resistors" package="0603-RES" value="200" x="22.352" y="9.144" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.701" y="9.4615" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="23.4315" y="10.287" size="0.4064" layer="27" rot="R180"/>
+<attribute name="VALUE" x="31.4325" y="9.017" size="0.8128" layer="27"/>
 </element>
 <element name="D1" library="my library" package="PLCC4" value="LED-RGBPLCC4" x="25.908" y="12.192" smashed="yes" rot="R270">
 <attribute name="NAME" x="27.94" y="14.224" size="0.8128" layer="51"/>
 <attribute name="VALUE" x="23.368" y="13.462" size="0.8128" layer="27" rot="R270"/>
 </element>
-<element name="ISP" library="my library" package="NOSS_AVR-ISP-6" value="MYISP-AVR-ISP-6VERT" x="9.144" y="10.16" smashed="yes" rot="R90">
+<element name="ISP" library="my library" package="NOSS_AVR-ISP-6" value="ISP" x="9.144" y="10.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.081" y="6.096" size="0.8128" layer="51" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="5.969" y="6.35" size="1.27" layer="27" ratio="12" rot="R90"/>
+<attribute name="VALUE" x="10.922" y="5.969" size="1.27" layer="27" ratio="12" rot="R180"/>
 </element>
 </elements>
 <signals>
